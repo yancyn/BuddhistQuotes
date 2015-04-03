@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.muje.android.quotes"
+    android:versionCode="17"
+    android:versionName="0.9.7">
+
+    <application
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name">
+        
+        <activity
+            android:label="@string/app_name"
+            android:name=".QuoteActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>            
+        </activity>
+        <activity android:name=".PageActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".FavoriteActivity" />
+        <activity android:name=".AuthorActivity" />
+        
+        <receiver
+            android:label="@string/app_name"
+            android:name=".QuoteWidget">
+            <intent-filter >
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider" />
+        </receiver>
+
+    </application>
+
+</manifest>

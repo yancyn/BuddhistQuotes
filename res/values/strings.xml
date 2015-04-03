@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World!</string>
+    <string name="app_name">静思语</string>
+    
+    <string name="askTime_en">Please key in interval time</string>
+    <string name="ok_en">OK</string>
+    <string name="second_en">second</string>
+    <string name="minute_en">minute</string>
+    <string name="hour_en">hour</string>
+</resources>
